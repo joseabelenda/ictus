@@ -1,0 +1,15 @@
+assemble:
+    - from: build/static
+      into: static
+ictus-custom-element:
+    cssURLs:
+        - css/main.*.css
+    friendlyURLMapping: ictus-custom-element
+    htmlElementName: ictus-custom-element
+    instanceable: false
+    name: Ictus Custom Element
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        - js/main.*.js
+    useESM: true
