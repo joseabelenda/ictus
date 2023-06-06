@@ -20,6 +20,7 @@ import {Liferay} from './common/services/liferay/liferay';
 import HelloBar from './routes/hello-bar/pages/HelloBar';
 import HelloFoo from './routes/hello-foo/pages/HelloFoo';
 import HelloWorld from './routes/hello-world/pages/HelloWorld';
+import MembersList from './routes/members/pages/MemberList';
 
 import './common/styles/index.scss';
 
@@ -34,12 +35,7 @@ const App = ({route}) => {
 
 	return (
 		<div>
-			<HelloWorld />
-			{Liferay.ThemeDisplay.isSignedIn() && (
-				<div>
-					ICTUS
-				</div>
-			)}
+			<MembersList />
 		</div>
 	);
 };

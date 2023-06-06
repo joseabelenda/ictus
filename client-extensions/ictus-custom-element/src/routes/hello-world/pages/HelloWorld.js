@@ -14,6 +14,9 @@
 
 import React from 'react';
 
+import ClayTable from '@clayui/table';
+import ClayLayout from '@clayui/layout';
+
 const HelloWorld = () => (
 	<div className="hello-world">
 		<h1>
